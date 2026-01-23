@@ -22,7 +22,6 @@ import static org.mockito.Mockito.*;
 class TaskServiceTest {
 
     @Mock TaskRepository taskRepository;
-    @Mock UserRepository userRepository;
     @Mock MailService mailService;
 
     @InjectMocks TaskService taskService;
