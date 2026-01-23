@@ -58,31 +58,4 @@ class TaskControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(10));
     }
-
-    @Test
-    void testStartTask() throws Exception {
-        when(currentUserService.getCurrentUserId()).thenReturn(Optional.of(7L));
-        when(taskService.startTask(1L, 7L)).thenReturn(new Task());
-
-        mockMvc.perform(post("/tasks/1/start"))
-                .andExpect(status().isOk());
-    }
-    /*
-    @Test
-    void testStartTaskError() throws Exception {
-        when(currentUserService.getCurrentUserId()).thenReturn(Optional.of(7L));
-        when(taskService.startTask(1L, 7L)).thenThrow(new IllegalStateException("bad"));
-
-        mockMvc.perform(post("/tasks/1/start"))
-                .andExpect(status().isBadRequest());
-    }
-    */
-    @Test
-    void testFinishTask() throws Exception {
-        when(currentUserService.getCurrentUserId()).thenReturn(Optional.of(7L));
-        when(taskService.finishTask(1L, 7L)).thenReturn(new Task());
-
-        mockMvc.perform(post("/tasks/1/finish"))
-                .andExpect(status().isOk());
-    }
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.testit.controller.TaskControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-01-23T16:53:47.685Z" hostname="DESKTOP-C8HVL3M" time="1.002">
+  <properties/>
+  <testcase name="testGetAllTasks()" classname="com.example.testit.controller.TaskControllerTest" time="0.632"/>
+  <testcase name="testCreateTask()" classname="com.example.testit.controller.TaskControllerTest" time="0.322"/>
+  <testcase name="testGetTaskById()" classname="com.example.testit.controller.TaskControllerTest" time="0.026"/>
+  <system-out><![CDATA[17:53:41.044 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.testit.controller.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:53:41.395 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.controller.TaskControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-01-23T17:53:42.311+01:00  INFO 35804 --- [    Test worker] c.e.t.controller.TaskControllerTest      : Starting TaskControllerTest using Java 21.0.8 with PID 35804 (started by HP in C:\Users\HP\test-it)
+2026-01-23T17:53:42.315+01:00  INFO 35804 --- [    Test worker] c.e.t.controller.TaskControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2026-01-23T17:53:47.553+01:00  INFO 35804 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-01-23T17:53:47.554+01:00  INFO 35804 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-01-23T17:53:47.563+01:00  INFO 35804 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2026-01-23T17:53:47.644+01:00  INFO 35804 --- [    Test worker] c.e.t.controller.TaskControllerTest      : Started TaskControllerTest in 6.049 seconds (process running for 8.858)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\HP\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.10\90ed94ac044ea8953b224304c762316e91fd6b31\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
