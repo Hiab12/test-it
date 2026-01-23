@@ -15,6 +15,6 @@
             </column>
             <column name="manager_id" type="uuid"/>
         </createTable>
-        <addForeignKeyConstraint baseTableName="users" baseColumnNames="manager_id" referencedTableName="users" referencedColumnNames="id"/>
+
     </changeSet>
 </databaseChangeLog>

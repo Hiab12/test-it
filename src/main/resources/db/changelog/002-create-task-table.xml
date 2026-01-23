@@ -24,7 +24,7 @@
                 <constraints nullable="true"/>
             </column>
         </createTable>
-        <addForeignKeyConstraint baseTableName="task" baseColumnNames="assigned_user_id" referencedTableName="users" referencedColumnNames="id"/>
-        <addForeignKeyConstraint baseTableName="task" baseColumnNames="requester_id" referencedTableName="users" referencedColumnNames="id"/>
+
+
     </changeSet>
 </databaseChangeLog>
