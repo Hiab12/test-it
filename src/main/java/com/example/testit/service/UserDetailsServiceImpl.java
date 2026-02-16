@@ -23,14 +23,14 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username);
 
-        if (user == null) {
-            throw new UsernameNotFoundException("User not found: " + username);
-        }
+        if (user == null) throw new UsernameNotFoundException("User not found");
 
-        return new org.springframework.security.core.userdetails.User(
-                user.getUsername(),
-                user.getPassword(),
-                List.of(new SimpleGrantedAuthority("ROLE_USER"))
-        );
+        String role = "ROLE_" + user.getRole().name();
+
+        return org.springframework.security.core.userdetails.User
+                .withUsername(user.getUsername())
+                .password(user.getPassword())
+                .authorities(role)
+                .build();
     }
 }

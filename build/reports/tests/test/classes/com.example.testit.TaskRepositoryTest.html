@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.118s</div>
+<div class="counter">0.224s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,27 +84,27 @@
 </tr>
 <tr>
 <td class="success">findByAssignedUserId_shouldReturnUserTasks()</td>
-<td class="success">0.024s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findById_shouldReturnTask_whenExists()</td>
-<td class="success">0.017s</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findByUserAndStatus_shouldReturnEmpty_whenNoMatch()</td>
-<td class="success">0.020s</td>
+<td class="success">0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findByUserAndStatus_shouldReturnMatchingTasks()</td>
-<td class="success">0.024s</td>
+<td class="success">0.049s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">save_shouldPersistTask()</td>
-<td class="success">0.017s</td>
+<td class="success">0.105s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -112,8 +112,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2026-02-16T10:10:42.061+01:00  INFO 21248 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.testit.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-02-16T10:10:42.085+01:00  INFO 21248 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.TaskRepositoryTest
+<pre>2026-02-16T11:57:13.089+01:00  INFO 14028 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.testit.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-16T11:57:13.100+01:00  INFO 14028 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.TaskRepositoryTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -123,52 +123,52 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-02-16T10:10:42.166+01:00  INFO 21248 --- [    Test worker] com.example.testit.TaskRepositoryTest    : Starting TaskRepositoryTest using Java 21.0.8 with PID 21248 (started by HP in C:\Users\HP\test-it)
-2026-02-16T10:10:42.166+01:00  INFO 21248 --- [    Test worker] com.example.testit.TaskRepositoryTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-02-16T10:10:42.305+01:00  INFO 21248 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-16T10:10:42.324+01:00  INFO 21248 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
-2026-02-16T10:10:42.343+01:00  INFO 21248 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2026-02-16T10:10:42.374+01:00  INFO 21248 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:53394da6-103d-44de-bc1d-ee1b58d62a98;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2026-02-16T10:10:42.402+01:00  INFO 21248 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-02-16T10:10:42.408+01:00  INFO 21248 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-02-16T10:10:42.415+01:00  INFO 21248 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-16T10:10:42.418+01:00  WARN 21248 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-16T10:10:42.477+01:00  INFO 21248 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T11:57:13.130+01:00  INFO 14028 --- [    Test worker] com.example.testit.TaskRepositoryTest    : Starting TaskRepositoryTest using Java 21.0.8 with PID 14028 (started by HP in C:\Users\HP\test-it)
+2026-02-16T11:57:13.130+01:00  INFO 14028 --- [    Test worker] com.example.testit.TaskRepositoryTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-02-16T11:57:13.211+01:00  INFO 14028 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T11:57:13.226+01:00  INFO 14028 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2026-02-16T11:57:13.238+01:00  INFO 14028 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-16T11:57:13.267+01:00  INFO 14028 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b86bed56-3751-456b-a046-2238bd7559f4;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-16T11:57:13.291+01:00  INFO 14028 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T11:57:13.295+01:00  INFO 14028 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T11:57:13.299+01:00  INFO 14028 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T11:57:13.307+01:00  WARN 14028 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T11:57:13.349+01:00  INFO 14028 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists task cascade 
 Hibernate: drop table if exists users cascade 
 Hibernate: create table task (assigned_user_id bigint, id bigint generated by default as identity, requester_id bigint, description varchar(255), status varchar(255) check (status in ('OUVERT','EN_COURS','FINI')), title varchar(255), primary key (id))
-Hibernate: create table users (id bigint generated by default as identity, manager_id bigint, password varchar(255), username varchar(255), primary key (id))
+Hibernate: create table users (id bigint generated by default as identity, manager_id bigint, password varchar(255), role varchar(255) not null check (role in ('USER','MANAGER','ADMIN')), username varchar(255), primary key (id))
 Hibernate: alter table if exists task add constraint FKg2fon1f6hw8y0g6sl4gvp0vmf foreign key (assigned_user_id) references users
 Hibernate: alter table if exists task add constraint FKnc79cjqheb4w00h7pd5s6b1qg foreign key (requester_id) references users
 Hibernate: alter table if exists users add constraint FK5p1ci5btqfwvtaqx5n2wxi182 foreign key (manager_id) references users
-2026-02-16T10:10:42.491+01:00  INFO 21248 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-16T10:10:42.569+01:00  INFO 21248 --- [    Test worker] com.example.testit.TaskRepositoryTest    : Started TaskRepositoryTest in 0.477 seconds (process running for 9.312)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+2026-02-16T11:57:13.361+01:00  INFO 14028 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T11:57:13.468+01:00  INFO 14028 --- [    Test worker] com.example.testit.TaskRepositoryTest    : Started TaskRepositoryTest in 0.366 seconds (process running for 12.998)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assigned_user_id,t1_0.description,t1_0.requester_id,t1_0.status,t1_0.title from task t1_0 where t1_0.assigned_user_id=?
 Hibernate: select t1_0.id,t1_0.assigned_user_id,t1_0.description,t1_0.requester_id,t1_0.status,t1_0.title from task t1_0 where t1_0.assigned_user_id=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: update task set assigned_user_id=?,description=?,requester_id=?,status=?,title=? where id=?
 Hibernate: select t1_0.id,t1_0.assigned_user_id,t1_0.description,t1_0.requester_id,t1_0.status,t1_0.title from task t1_0 where t1_0.assigned_user_id=? and t1_0.status=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assigned_user_id,t1_0.description,t1_0.requester_id,t1_0.status,t1_0.title from task t1_0 where t1_0.assigned_user_id=? and t1_0.status=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: insert into task (assigned_user_id,description,requester_id,status,title,id) values (?,?,?,?,?,default)
 Hibernate: select t1_0.id,t1_0.assigned_user_id,t1_0.description,t1_0.requester_id,t1_0.status,t1_0.title from task t1_0
@@ -183,7 +183,7 @@ Hibernate: select t1_0.id,t1_0.assigned_user_id,t1_0.description,t1_0.requester_
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14</a> at Feb 16, 2026, 10:10:44 AM</p>
+<a href="https://www.gradle.org">Gradle 8.14</a> at Feb 16, 2026, 11:57:16 AM</p>
 </div>
 </div>
 </body>

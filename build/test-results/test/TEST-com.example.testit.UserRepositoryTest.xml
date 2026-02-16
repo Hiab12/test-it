@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.testit.UserRepositoryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-02-16T09:10:43.608Z" hostname="DESKTOP-C8HVL3M" time="0.263">
+<testsuite name="com.example.testit.UserRepositoryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-02-16T10:57:15.612Z" hostname="DESKTOP-C8HVL3M" time="0.248">
   <properties/>
-  <testcase name="findByUsername_shouldReturnUser_whenExists()" classname="com.example.testit.UserRepositoryTest" time="0.025"/>
+  <testcase name="findByUsername_shouldReturnUser_whenExists()" classname="com.example.testit.UserRepositoryTest" time="0.021"/>
   <testcase name="save_shouldPersistUserWithManager()" classname="com.example.testit.UserRepositoryTest" time="0.018"/>
-  <testcase name="existsById_shouldReturnFalse_whenNotExists()" classname="com.example.testit.UserRepositoryTest" time="0.098"/>
-  <testcase name="findById_shouldReturnUser_whenExists()" classname="com.example.testit.UserRepositoryTest" time="0.017"/>
-  <testcase name="save_shouldPersistUser()" classname="com.example.testit.UserRepositoryTest" time="0.016"/>
-  <testcase name="existsById_shouldReturnTrue_whenExists()" classname="com.example.testit.UserRepositoryTest" time="0.017"/>
-  <testcase name="save_shouldPersistUserWithoutManager()" classname="com.example.testit.UserRepositoryTest" time="0.018"/>
+  <testcase name="existsById_shouldReturnFalse_whenNotExists()" classname="com.example.testit.UserRepositoryTest" time="0.107"/>
+  <testcase name="findById_shouldReturnUser_whenExists()" classname="com.example.testit.UserRepositoryTest" time="0.015"/>
+  <testcase name="save_shouldPersistUser()" classname="com.example.testit.UserRepositoryTest" time="0.013"/>
+  <testcase name="existsById_shouldReturnTrue_whenExists()" classname="com.example.testit.UserRepositoryTest" time="0.014"/>
+  <testcase name="save_shouldPersistUserWithoutManager()" classname="com.example.testit.UserRepositoryTest" time="0.01"/>
   <testcase name="findByUsername_shouldReturnNull_whenNotExists()" classname="com.example.testit.UserRepositoryTest" time="0.012"/>
-  <testcase name="selfReference_shouldAllowUserAsOwnManager()" classname="com.example.testit.UserRepositoryTest" time="0.016"/>
-  <system-out><![CDATA[2026-02-16T10:10:43.564+01:00  INFO 21248 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.testit.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-02-16T10:10:43.601+01:00  INFO 21248 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.UserRepositoryTest
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: select u1_0.id,u1_0.manager_id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+  <testcase name="selfReference_shouldAllowUserAsOwnManager()" classname="com.example.testit.UserRepositoryTest" time="0.014"/>
+  <system-out><![CDATA[2026-02-16T11:57:15.569+01:00  INFO 14028 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.testit.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-16T11:57:15.604+01:00  INFO 14028 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.UserRepositoryTest
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.manager_id,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: select count(*) from users u1_0 where u1_0.id=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 Hibernate: select count(*) from users u1_0 where u1_0.id=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
-Hibernate: select u1_0.id,u1_0.manager_id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-Hibernate: insert into users (manager_id,password,username,id) values (?,?,?,default)
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.manager_id,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (manager_id,password,role,username,id) values (?,?,?,?,default)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.testit.TaskServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-02-16T09:10:42.714Z" hostname="DESKTOP-C8HVL3M" time="0.836">
+<testsuite name="com.example.testit.TaskServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-02-16T10:57:14.815Z" hostname="DESKTOP-C8HVL3M" time="0.727">
   <properties/>
-  <testcase name="startTask_shouldThrow_whenTaskNotOuvert()" classname="com.example.testit.TaskServiceTest" time="0.768"/>
-  <testcase name="startTask_shouldStartTask_whenValid()" classname="com.example.testit.TaskServiceTest" time="0.011"/>
-  <testcase name="createTask_shouldCreateTask()" classname="com.example.testit.TaskServiceTest" time="0.011"/>
-  <testcase name="startTask_shouldThrow_whenUserHasOngoingTask()" classname="com.example.testit.TaskServiceTest" time="0.008"/>
-  <testcase name="finishTask_shouldThrow_whenTaskNotEnCours()" classname="com.example.testit.TaskServiceTest" time="0.007"/>
+  <testcase name="startTask_shouldThrow_whenTaskNotOuvert()" classname="com.example.testit.TaskServiceTest" time="0.63"/>
+  <testcase name="startTask_shouldStartTask_whenValid()" classname="com.example.testit.TaskServiceTest" time="0.013"/>
+  <testcase name="createTask_shouldCreateTask()" classname="com.example.testit.TaskServiceTest" time="0.021"/>
+  <testcase name="startTask_shouldThrow_whenUserHasOngoingTask()" classname="com.example.testit.TaskServiceTest" time="0.01"/>
+  <testcase name="finishTask_shouldThrow_whenTaskNotEnCours()" classname="com.example.testit.TaskServiceTest" time="0.009"/>
   <testcase name="finishTask_shouldFinishTask_whenValid()" classname="com.example.testit.TaskServiceTest" time="0.007"/>
-  <testcase name="startTask_shouldThrow_whenTaskNotAssigned()" classname="com.example.testit.TaskServiceTest" time="0.009"/>
+  <testcase name="startTask_shouldThrow_whenTaskNotAssigned()" classname="com.example.testit.TaskServiceTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
