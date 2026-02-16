@@ -105,11 +105,9 @@ class TaskControllerTest {
 
     @Test
     void user_canReadTasks_butCannotCreate() throws Exception {
-        // GET OK
         mockMvc.perform(get("/tasks").with(httpBasic("user", "user123")))
                 .andExpect(status().isOk());
 
-        // POST forbidden
         String taskJson = """
         {"title":"T1","description":"hello"}
         """;
@@ -150,7 +148,7 @@ class TaskControllerTest {
 
     @Test
     void admin_canDelete_butManager_cannotDelete() throws Exception {
-        // Créer une tâche en tant que manager pour avoir un id à supprimer
+
         String createJson = """
         {"title":"T1","description":"hello"}
         """;
@@ -162,17 +160,16 @@ class TaskControllerTest {
                 .andExpect(status().isOk())
                 .andReturn().getResponse().getContentAsString();
 
-        // Extraire l'id sans parser JSON (simple)
-        // response ressemble à {"id":1,...}
+
         String idStr = response.replaceAll(".*\"id\"\\s*:\\s*(\\d+).*", "$1");
         Long id = Long.parseLong(idStr);
 
-        // Manager ne peut pas delete
+
         mockMvc.perform(delete("/tasks/{id}", id)
                         .with(httpBasic("manager", "manager123")))
                 .andExpect(status().isForbidden());
 
-        // Admin peut delete
+
         mockMvc.perform(delete("/tasks/{id}", id)
                         .with(httpBasic("admin", "admin123")))
                 .andExpect(status().isNoContent());
