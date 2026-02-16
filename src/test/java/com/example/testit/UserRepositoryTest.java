@@ -97,4 +97,5 @@ class UserRepositoryTest {
         assertThat(saved.getId()).isNotNull();
         assertThat(saved.getManager().getUsername()).isEqualTo("selfmanager");
     }
+
 }

@@ -34,6 +34,7 @@ class TaskServiceIntegrationTest {
 
     @BeforeEach
     void setUp() {
+        taskRepository.deleteAll();
         userRepository.deleteAll();
         user1 = userRepository.save(new User("user1"));
         user2 = userRepository.save(new User("user2"));

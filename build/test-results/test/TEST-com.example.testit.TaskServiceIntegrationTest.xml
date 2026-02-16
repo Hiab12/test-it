@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.testit.TaskServiceIntegrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-02-16T09:10:39.215Z" hostname="DESKTOP-C8HVL3M" time="1.425">
+  <properties/>
+  <testcase name="findByUserId_shouldReturnUserTasks()" classname="com.example.testit.TaskServiceIntegrationTest" time="1.176"/>
+  <testcase name="startTask_shouldFail_whenUserHasMultipleOngoingTasks()" classname="com.example.testit.TaskServiceIntegrationTest" time="0.076"/>
+  <testcase name="startTask_shouldStartTaskAndUpdateDatabase()" classname="com.example.testit.TaskServiceIntegrationTest" time="0.026"/>
+  <testcase name="createTask_shouldCreateTaskInDatabase()" classname="com.example.testit.TaskServiceIntegrationTest" time="0.034"/>
+  <testcase name="finishTask_shouldSendMailToManager_whenManagerExists()" classname="com.example.testit.TaskServiceIntegrationTest" time="0.037"/>
+  <testcase name="startTask_shouldFail_whenTaskNotAssigned()" classname="com.example.testit.TaskServiceIntegrationTest" time="0.025"/>
+  <testcase name="finishTask_shouldFinishTaskAndUpdateDatabase()" classname="com.example.testit.TaskServiceIntegrationTest" time="0.039"/>
+  <system-out><![CDATA[10:10:34.102 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.testit.TaskServiceIntegrationTest]: TaskServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:10:34.206 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.TaskServiceIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-02-16T10:10:34.575+01:00  INFO 21248 --- [    Test worker] c.e.testit.TaskServiceIntegrationTest    : Starting TaskServiceIntegrationTest using Java 21.0.8 with PID 21248 (started by HP in C:\Users\HP\test-it)
+2026-02-16T10:10:34.576+01:00  INFO 21248 --- [    Test worker] c.e.testit.TaskServiceIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2026-02-16T10:10:35.158+01:00  INFO 21248 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T10:10:35.220+01:00  INFO 21248 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2026-02-16T10:10:35.693+01:00  INFO 21248 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T10:10:35.759+01:00  INFO 21248 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-16T10:10:35.799+01:00  INFO 21248 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T10:10:36.054+01:00  INFO 21248 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T10:10:36.081+01:00  INFO 21248 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-16T10:10:36.251+01:00  INFO 21248 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-16T10:10:36.254+01:00  INFO 21248 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-16T10:10:36.288+01:00  WARN 21248 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T10:10:36.977+01:00  INFO 21248 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T10:10:37.016+01:00  INFO 21248 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T10:10:37.293+01:00  INFO 21248 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-16T10:10:38.051+01:00  WARN 21248 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16T10:10:38.632+01:00  INFO 21248 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1791670e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d5d6297, org.springframework.security.web.context.SecurityContextHolderFilter@781befe7, org.springframework.security.web.header.HeaderWriterFilter@18213a65, org.springframework.web.filter.CorsFilter@6bd2c51d, org.springframework.security.web.authentication.logout.LogoutFilter@3d306fd5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@109941fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@451393a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c590039, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@709c41da, org.springframework.security.web.access.ExceptionTranslationFilter@4b90a402, org.springframework.security.web.access.intercept.AuthorizationFilter@5fe80760]
+2026-02-16T10:10:39.040+01:00  INFO 21248 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-16T10:10:39.185+01:00  INFO 21248 --- [    Test worker] c.e.testit.TaskServiceIntegrationTest    : Started TaskServiceIntegrationTest in 4.803 seconds (process running for 5.927)
+2026-02-16T10:10:40.448+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to user1: Tâche commencée - La tâche 'Task 1' a été commencée.
+2026-02-16T10:10:40.492+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to user1: Tâche commencée - La tâche 'Task 1' a été commencée.
+2026-02-16T10:10:40.564+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to user1: Tâche commencée - La tâche 'Task 1' a été commencée.
+2026-02-16T10:10:40.568+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to user1: Tâche terminée - La tâche 'Task 1' a été terminée.
+2026-02-16T10:10:40.569+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to manager: Tâche de votre subordonné terminée - La tâche 'Task 1' assignée à user1 a été terminée.
+2026-02-16T10:10:40.628+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to user1: Tâche commencée - La tâche 'Task 1' a été commencée.
+2026-02-16T10:10:40.633+01:00  INFO 21248 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to user1: Tâche terminée - La tâche 'Task 1' a été terminée.
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\HP\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.10\90ed94ac044ea8953b224304c762316e91fd6b31\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
